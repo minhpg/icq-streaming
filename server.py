@@ -186,7 +186,7 @@ def hydrax_extract(slug):
         return None
 
 def get_proxies():
-    response = requests.get("https://actproxy.com/proxy-api/ec1b2cee15e9e5d35b157591c1df6c27_12458-28506?format=json&userpass=true")
+    response = requests.get("")
     print(response.json())
     list_proxies = response.json()
     return(choice(list_proxies).split(";"))
